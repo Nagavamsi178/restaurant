@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sattibabu Biryani</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #fffaf2;
+      color: #333;
+    }
+
+    header {
+      background-color: #b33939;
+      color: white;
+      text-align: center;
+      padding: 30px 10px;
+    }
+
+    nav {
+      background-color: #f39c12;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li {
+      margin: 0 15px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    section {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #b33939;
+    }
+
+    figure {
+      display: inline-block;
+      margin: 20px;
+      text-align: center;
+    }
+
+    figure img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    figcaption {
+      margin-top: 10px;
+      font-style: italic;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th,
+    td {
+      border: 1px solid #aaa;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f7d794;
+    }
+
+    tr:nth-child(even) {
+      background-color: #fff4e6;
+    }
+
+    form {
+      background-color: #fff0e6;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input,
+    button {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      background-color: #b33939;
+      color: white;
+      font-weight: bold;
+      margin-top: 15px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #a93226;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #b33939;
+      color: white;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      figure img {
+        width: 100%;
+        height: auto;
+      }
+
+      figure {
+        width: 100%;
+      }
+    }
+    
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Welcome to Sattibabu Biryani</h1>
+    <p>Your go-to place for mouth-watering food</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li>Home</li>
+      <li>Menu</li>
+      <li>About Us</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+
+  <section>
+    <h2 style="text-align: center;">Our Special Dishes</h2>
+
+
+    <figure>
+      <img src="images.jpg.avif" alt="Delicious Chicken Biryani">
+      <figcaption>Chicken Fry Piece Biryani</figcaption>
+    </figure>
+
+    <figure>
+      <img src="image.jpg.JPG" alt="Tasty Mutton Biryani">
+      <figcaption>Mutton Boneless Biryani</figcaption>
+    </figure>
+    <figure>
+      <img src="imagesss.jpg" alt="super taste roast biryani">
+      <figcaption>chicken roast biryani</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>Menu</h2>
+    <table>
+      <tr>
+        <th>Dish</th>
+        <th>Description</th>
+        <th>Price</th>
+      </tr>
+      <tr>
+        <td>Chicken Biryani</td>
+        <td>Chicken fry piece</td>
+        <td>₹200</td>
+      </tr>
+      <tr>
+        <td>Mutton Biryani</td>
+        <td>Mutton boneless</td>
+        <td>₹350</td>
+      </tr>
+      <tr>
+        <td>Chicken Boneless Biryani</td>
+        <td>Soft juicy boneless chicken</td>
+        <td>₹190</td>
+      </tr>
+      <tr>
+        <td>chicken biryani</td>
+        <td>chicken roast biryani</td>
+        <td>₹250</td>
+      </tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>Book a Table</h2>
+    <form>
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" required>
+
+      <label for="time">Time:</label>
+      <input type="time" id="time" required>
+
+      <label for="people">Number of People:</label>
+      <input type="number" id="people" min="1" max="20" required>
+
+      <button type="submit">Reserve Table</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Contact Us</h2>
+    <p><strong>Email:</strong> contact@sattibabubiryani.com</p>
+    <p><strong>Phone:</strong> +91 98765 43210</p>
+    <p><strong>Address:</strong> 123 Spice Street, Biryani City, India</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sattibabu Biryani. All rights reserved.</p>
+  </footer>
+<script>
+  document.querySelector("form").addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevent form from submitting normally
+
+    // Get form values
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const date = document.getElementById("date").value;
+    const time = document.getElementById("time").value;
+    const people = document.getElementById("people").value;
+
+    // Basic validation
+    if (!name || !email || !date || !time || !people) {
+      alert("Please fill in all the fields.");
+      return;
+    }
+
+    // Confirmation message
+    alert(
+      `Reservation confirmed!\n\nName: ${name}\nEmail: ${email}\nDate: ${date}\nTime: ${time}\nPeople: ${people}`
+    );
+
+    // Optional: Clear form after reservation
+    document.querySelector("form").reset();
+  });
+</script>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sattibabu Biryani</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #fffaf2;
+      color: #333;
+    }
+
+    header {
+      background-color: #b33939;
+      color: white;
+      text-align: center;
+      padding: 30px 10px;
+    }
+
+    nav {
+      background-color: #f39c12;
+      padding: 10px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li {
+      margin: 0 15px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    section {
+      padding: 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #b33939;
+    }
+
+    figure {
+      display: inline-block;
+      margin: 20px;
+      text-align: center;
+    }
+
+    figure img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    figcaption {
+      margin-top: 10px;
+      font-style: italic;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th,
+    td {
+      border: 1px solid #aaa;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f7d794;
+    }
+
+    tr:nth-child(even) {
+      background-color: #fff4e6;
+    }
+
+    form {
+      background-color: #fff0e6;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    input,
+    button {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      background-color: #b33939;
+      color: white;
+      font-weight: bold;
+      margin-top: 15px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #a93226;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #b33939;
+      color: white;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      figure img {
+        width: 100%;
+        height: auto;
+      }
+
+      figure {
+        width: 100%;
+      }
+    }
+    
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Welcome to Sattibabu Biryani</h1>
+    <p>Your go-to place for mouth-watering food</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li>Home</li>
+      <li>Menu</li>
+      <li>About Us</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+
+  <section>
+    <h2 style="text-align: center;">Our Special Dishes</h2>
+
+
+    <figure>
+      <img src="images.jpg.avif" alt="Delicious Chicken Biryani">
+      <figcaption>Chicken Fry Piece Biryani</figcaption>
+    </figure>
+
+    <figure>
+      <img src="image.jpg.JPG" alt="Tasty Mutton Biryani">
+      <figcaption>Mutton Boneless Biryani</figcaption>
+    </figure>
+    <figure>
+      <img src="imagesss.jpg" alt="super taste roast biryani">
+      <figcaption>chicken roast biryani</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <h2>Menu</h2>
+    <table>
+      <tr>
+        <th>Dish</th>
+        <th>Description</th>
+        <th>Price</th>
+      </tr>
+      <tr>
+        <td>Chicken Biryani</td>
+        <td>Chicken fry piece</td>
+        <td>₹200</td>
+      </tr>
+      <tr>
+        <td>Mutton Biryani</td>
+        <td>Mutton boneless</td>
+        <td>₹350</td>
+      </tr>
+      <tr>
+        <td>Chicken Boneless Biryani</td>
+        <td>Soft juicy boneless chicken</td>
+        <td>₹190</td>
+      </tr>
+      <tr>
+        <td>chicken biryani</td>
+        <td>chicken roast biryani</td>
+        <td>₹250</td>
+      </tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>Book a Table</h2>
+    <form>
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <label for="date">Date:</label>
+      <input type="date" id="date" required>
+
+      <label for="time">Time:</label>
+      <input type="time" id="time" required>
+
+      <label for="people">Number of People:</label>
+      <input type="number" id="people" min="1" max="20" required>
+
+      <button type="submit">Reserve Table</button>
+    </form>
+  </section>
+
+  <section>
+    <h2>Contact Us</h2>
+    <p><strong>Email:</strong> contact@sattibabubiryani.com</p>
+    <p><strong>Phone:</strong> +91 98765 43210</p>
+    <p><strong>Address:</strong> 123 Spice Street, Biryani City, India</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Sattibabu Biryani. All rights reserved.</p>
+  </footer>
+<script>
+  document.querySelector("form").addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevent form from submitting normally
+
+    // Get form values
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const date = document.getElementById("date").value;
+    const time = document.getElementById("time").value;
+    const people = document.getElementById("people").value;
+
+    // Basic validation
+    if (!name || !email || !date || !time || !people) {
+      alert("Please fill in all the fields.");
+      return;
+    }
+
+    // Confirmation message
+    alert(
+      `Reservation confirmed!\n\nName: ${name}\nEmail: ${email}\nDate: ${date}\nTime: ${time}\nPeople: ${people}`
+    );
+
+    // Optional: Clear form after reservation
+    document.querySelector("form").reset();
+  });
+</script>
+
+</body>
+
+</html>
